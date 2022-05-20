@@ -1,0 +1,20 @@
+.header{
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background: darkblue;
+}
+
+.header img{
+  height: 100px;
+  margin: 10px;
+}
+
+.header nav{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 10px;
+}

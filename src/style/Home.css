@@ -1,0 +1,56 @@
+.main{
+  grid-area: main;
+  position: relative;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) repeat(12, minmax(50px, 100px)) minmax(50px, 1fr);
+  grid-row-gap: 100px;
+}
+.box_1{
+  background-color: deeppink;
+  height: 300px;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_2{
+  min-height: 600px;
+  grid-column: 2/14;
+}
+
+.box_animals {
+  height: auto;
+  grid-column: 2/14;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.Animal {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 4px solid purple;
+}
+
+.Animal img{
+  width: 100%;
+}
+
+.Animal h2{
+  margin-top: 10px;
+}
+
+.Animal p{
+  margin: 0 10px 10px 10px;
+}
+
+.box_end{
+  height: 5vh;
+  grid-column: 1/-1;
+}
